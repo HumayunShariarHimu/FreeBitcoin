@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FreeBitcoin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=VT323&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --red:#ff0000;
+}
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    background:black;
+    color:var(--red);
+    font-family:'JetBrains Mono',monospace;
+}
+
+/* Loader */
+#loader{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.loader-img{
+    width:120px;
+    filter:drop-shadow(0 0 15px red);
+}
+
+.loading-text{
+    margin-top:15px;
+    font-size:22px;
+    font-family:'VT323';
+    letter-spacing:3px;
+    text-shadow:0 0 10px red;
+}
+
+/* Container */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:40px 0;
+}
+
+h1{
+    font-family:'VT323';
+    font-size:3.5rem;
+    text-shadow:0 0 20px red;
+}
+
+.dev{
+    margin-top:15px;
+    border:1px solid red;
+    padding:8px 25px;
+    display:inline-block;
+}
+
+/* Grid */
+.grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+/* Card */
+.card{
+    background:#050000;
+    border:1px solid red;
+    padding:15px;
+    box-shadow:0 0 20px rgba(255,0,0,.4);
+}
+
+/* Title */
+.card-title{
+    margin-bottom:15px;
+    border-left:4px solid red;
+    padding-left:10px;
+}
+
+/* Iframe */
+.iframe-box{
+    width:100%;
+    height:500px;
+    border:1px solid red;
+    background:black;
+}
+
+iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    /* ❌ NO FILTER HERE */
+}
+
+/* Button */
+.btn{
+    display:block;
+    margin-top:20px;
+    padding:15px;
+    border:1px solid red;
+    color:red;
+    text-align:center;
+    text-decoration:none;
+    font-family:'VT323';
+    font-size:22px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:red;
+    color:black;
+}
+
+/* Footer */
+footer{
+    margin-top:70px;
+    padding:25px;
+    text-align:center;
+    border-top:1px solid red;
+    font-family:'VT323';
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Loader -->
+<div id="loader">
+
+<img src="bitcoin.png" class="loader-img">
+
+<div class="loading-text">
+Loading...
+</div>
+
+</div>
+
+
+<div class="container">
+
+<header>
+
+<h1>FreeBitcoin</h1>
+
+
+</header>
+
+
+<div class="grid">
+
+<!-- Card 1 -->
+<div class="card">
+
+<div class="card-title">
+> FreeBitcoInHack
+</div>
+
+<div class="iframe-box">
+<iframe src="https://humayunshariarhimu.github.io/FreeBitcoInHack/"></iframe>
+</div>
+
+<a class="btn" href="https://humayunshariarhimu.github.io/FreeBitcoInHack/" target="_blank">
+Access
+</a>
+
+</div>
+
+
+<!-- Card 2 -->
+<div class="card">
+
+<div class="card-title">
+> FreeBitcoinGame
+</div>
+
+<div class="iframe-box">
+<iframe src="https://humayunshariarhimu.github.io/FreeBitcoinGame/"></iframe>
+</div>
+
+<a class="btn" href="https://humayunshariarhimu.github.io/FreeBitcoinGame/" target="_blank">
+Access
+</a>
+
+</div>
+
+
+<!-- Card 3 -->
+<div class="card">
+
+<div class="card-title">
+> FreeBitcoInHacKing
+</div>
+
+<div class="iframe-box">
+<iframe src="https://humayunshariarhimu.github.io/FreeBitcoInHacKing/"></iframe>
+</div>
+
+<a class="btn" href="https://humayunshariarhimu.github.io/FreeBitcoInHacKing/" target="_blank">
+Access
+</a>
+
+</div>
+
+</div>
+
+
+<footer>
+Humayun Shariar Himu
+</footer>
+
+</div>
+
+
+<script>
+
+/* Simple Loader */
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.display="none";
+
+},1500);
+
+});
+
+</script>
+
+</body>
+</html>
